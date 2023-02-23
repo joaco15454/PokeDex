@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
+* {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 600;
+}
+.navBar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+i {
+    cursor: pointer;
+    z-index: 1 !important;
+}
+.favoritos {
+    position: absolute;
+    height: calc(100vh-65px);
+    width: 30%;
+    background-color: #887d1d;
+    right: 0;
+    top: 60px;
+    z-index: 245;
+    overflow-y: scroll;
+}
+.relative {
+    position: relative;
+    top: 30px;
+    margin-left: 19%;
+    font-size: 30px;
+}
+.oculto {
+    display: none;
+}
+body {
+    background-color: #f4e196;
+}
+.buscar {
+    width: 300px;
+}
+.titulo_buscar {
+    margin-top: 15%;
+}
+.pokemons {
+    width: 90%;
+}
+.col button {
+    width: 100px;
+    border-radius: 15%;
+}
+.pokemons {
+    width: 100%;
+}
+/*CARDS*/
+.poke {
+    width: 400px !important;
+    height: 30%;
+    background-color: #ffa739;
+    border-radius: 15px;
+}
+span {
+    width: 6em;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+ 
+}
+.tipo-poke span {
+    font-size: 20px;
+}
+
+.top-cart {
+    /*background-color: #fdf37a;*/
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.name-poke {
+    font-weight: 600;
+}
+.img_poke {
+    width: 90%;
+    
+    border: 3px solid #8a9597;
+    
+    background-color: #b9c3c4;
+    
+}
+.img_poke img {
+    width: 300px;
+}
+.mid_card {
+    background-color: #b9c3c4;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-bottom: 3px solid #8a9597;
+    border-left:3px solid #8a9597 ;
+    border-right: 3px solid #8a9597;
+    width: 90%;
+}
+/*STATS*/
+
+.hp {
+    font-size: 30px;
+}
+
+
+.stats  {
+    font-size: 20px;
+}
+.habilidades {
+    width: 250px;
+    text-align: center;
+    border:3px solid #8a9597;
+    height: 40px;
+    background-color:#b9c3c4 ;
+}
+.habilidades p {
+    margin-top: 5%;
+   
+}
+
+/*AGREGAR FAVORITOS*/
+.agregar-favoritos {
+    position: relative;
+    left: 70%;
+    font-size: 30px;
+    
+}
+.agregar-favoritos:hover {
+    color: gold;
+}
+.agregado {
+    color: gold;
+}
+
+/*CLASES*/
+.filter {
+    border: 1px solid #8a9597;
+    border-radius: 20px;
+}
+.grass {
+    background-color: green;
+    color: purple;
+}
+.poison {
+    background-color: purple;
+    color: green;
+}
+.fire {
+    background-color: rgb(166, 25, 25);
+    color: orange;
+}
+.water {
+    background-color: #6cb6a5;
+    color: white;
+}
+.flying {
+    background-color: #8a9597;
+    color: white;
+}
+.bug {
+    background-color: green;
+}
+.normal {
+    background-color: brown;
+}
+.electric {
+    background-color: #f4e196;
+}
+.ground {
+    background-color: aquamarine;
+}
+.fairy {
+    background-color: pink;
+}
+.dark {
+    background-color: #141414;
+    color: white;
+}
+.dragon {
+    background-color: black;
+    color: white;
+
+}
+.ice {
+    background-color: #6cb6a5;
+    color: white;
+}
+.steel{
+    background-color: #b9cccf;
+}
+.ghost{
+    background-color: #b9c3c4;
+}
+.rock {
+background-color: #974b09;
+}
+
+.allPokemons{
+    background-color: #141414;
+    color: white;
+    font-weight: 600;
+}
+.container_filter {
+    border: 3px solid black;
+    background-color: #ffa739;
+}
+/*CART PIKACHU*/
+
+.cart_poke {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffa739;
+    border-radius: 15px;
+}
+.cart_poke img {
+    width: 200px;
+    height: 200px;
+}
+.container_poke_fav {
+    width: 90%;
+}
+.quitarPoke {
+    position: relative;
+    left: 45%;
+    font-size: 23px;
+}
+.vaciar_carro{
+    border-radius: 14px;
+}
+
+.text_nav {
+    width: 100%;
+}
+.container_agregado_favoritos {
+    text-align: center;
+    border-radius: 0;
+}
+.agregado_favoritos {
+    position: fixed;
+    left: 40%;
+    right: 40%;
+    top: 90%;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #0bc22f;
+    z-index: 5;
+    transform: translateX(1px);
+    transition: 1;
+    
+    transition: all 0.5s ease-in;
+}
+.ocultoMsg {
+    transform: translateX(-400%);
+    transition: all 0.5s ease-out;
+}

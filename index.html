@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navBar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PokeCenter</a>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <span class="navbar-text me-auto text_nav">
+          Encuentra tus pokemones favoritos
+        </span>
+      </div>
+      <div class="navbar-brand">
+        <i class="fa-solid fa-star abrir_favoritos"></i>
+      </div>
+      <div class="favoritos oculto">
+        <div class="title_favorito d-flex justify-content-center align-items-centercenter p-3">
+          <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/230219/48314ddf84722db9890152657417d54a.png" alt="fuente-pokemon" border="0"></a>
+        </div>
+        
+        <div class="container_poke_fav d-flex justify-content-center flex-column align-items-center">
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-centercenter p-3">
+          <button class="p-3 vaciar_carro">VACIAR CARRITO</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--//NAVBAR-->
+  <div class="container mt-5">
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column titulo_buscar">
+      <img
+          src="https://fontmeme.com/permalink/230217/848321aef1fd96421ea6edde598ce4ce.png" alt="fuente-pokemon"
+          border="0">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 input_buscar" type="search" placeholder="Encuentra tu pokemon" aria-label="Search">
+        <button class="btn btn-outline-success buscar" type="submit">Search</button>
+        
+      </form>
+      <p class="mensaje_error"></p>
+    </div>
+  </div>
+  <!--MENSAJE ENCONTRAR-->
+  <div class="container_agregado_favoritos">
+    <span class="agregado_favoritos ocultoMsg">¡Agregado a favoritos!</span>
+  </div>
+  <!--//MENSAJE ENCONTRAR-->
+  <div class="container text-center pt-5">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 container_filter">
+      
+      <div class="col">
+        <button class="p-3   allPokemons" >AllPoke</button>
+      </div>
+      <div class="col">
+        <button class="p-3  grass filter" data-filter="12">GRASS</button>
+      </div>
+      <div class="col">
+        <button class="p-3  poison filter" data-filter="4">POSION</button>
+      </div>
+      <div class="col">
+        <button class="p-3 water filter" data-filter="11">WATER</button>
+      </div>
+      <div class="col">
+        <button class="p-3 flying filter" data-filter="3">FLYING</button>
+      </div>
+      <div class="col">
+        <button class="p-3 bug filter" data-filter="7">BUG</button>
+      </div>
+      <div class="col">
+        <button class="p-3 normal filter" data-filter="1">NORMAL</button>
+      </div>
+      <div class="col">
+        <button class="p-3 electric filter" data-filter="13">ELECTRIC</button>
+      </div>
+      <div class="col">
+        <button class="p-3 ground filter" data-filter="5">GROUND</button>
+      </div>
+      <div class="col">
+        <button class="p-3 fairy filter" data-filter="18">FAIRY</button>
+      </div>
+      <div class="col">
+        <button class="p-3  dark filter" data-filter="17">DARK</button>
+      </div>
+      <div class="col">
+        <button class="p-3  dragon filter" data-filter="16">DRAGON</button>
+      </div>
+      <div class="col">
+        <button class="p-3  ice filter" data-filter="15">ICE</button>
+      </div>
+      <div class="col">
+        <button class="p-3 psychic filter" data-filter="14">PSYCHIC</button>
+      </div>
+      <div class="col">
+        <button class="p-3 steel filter" data-filter="9">STEEL</button>
+      </div>
+      <div class="col">
+        <button class="p-3 ghost filter" data-filter="8">GHOST</button>
+      </div>
+      <div class="col">
+        <button class="p-3 rock filter" data-filter="6">ROCK</button>
+      </div>
+      <div class="col">
+        <button class="p-3 fighting filter" data-filter="2">FIGHTING</button>
+      </div>
+      <div class="col">
+        <button class="p-3 fire filter" data-filter="10">FIRE</button>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="container pokemons d-flex justify-content-between flex-wrap gap-3 mt-3 ">
+
+  </div>
+
+
+  <!--PAGINATION-->
+  <article class="d-flex justify-content-center align-items-center mt-4">
+    <div aria-label="Page navigation example">
+
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link previous-page" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link numberPage" href="#">1</a></li>
+       
+        <li class="page-item">
+          <a class="page-link next-page" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <script src="https://kit.fontawesome.com/5b0d5a1a1f.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
+
+
