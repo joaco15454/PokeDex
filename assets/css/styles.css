@@ -12,10 +12,13 @@ i {
     cursor: pointer;
     z-index: 1 !important;
 }
+.img_poke {
+    width: 30%;
+}
 .favoritos {
     position: absolute;
     height: calc(100vh-65px);
-    width: 30%;
+    width: 400px;
     background-color: #887d1d;
     right: 0;
     top: 60px;
@@ -204,6 +207,12 @@ background-color: #974b09;
 .container_filter {
     border: 3px solid black;
     background-color: #ffa739;
+}
+
+.allPokemons:hover,
+.filter:hover {
+    transform: scale(120%);
+    background-color: #f4e196;
 }
 /*CART PIKACHU*/
 
